@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+     background-image: url('../imgs/8-Bit-Backgrounds-HD-1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+
+}
+
+    .box {
+    align-items: center;
+    display: flex;
+    min-height: 120px;
+    justify-content: center;
+    
+    }
+
+    .container {
+        position: center;
+        height: 100%;
+        width: 400px;
+        background: rgba(255, 255, 255, 0.6); /* Cor branca com 60% de opacidade */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+
+   
+   .login-form{
+        align-items: center;
+        min-height: 400px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .login__button{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .login_header img{
+        width: 100px;
+        height: 100px;
+        padding-bottom: 30px;
+    }
+
+    .login_header h1{
+        font-size: 1,5em;
+        margin-top: 50px;
+    }
+
+    .login__input{
+        border: 2px solid #333;
+        border-radius: 8px;
+        color: #333;
+        margin-top: 15px;
+        outline: none;
+        margin-bottom: 15px;
+        padding: 10px;
+        font-size: 0,5em;
+        max-width: 300px;
+        width: 100%;
+
+    }
+
+    .login__button{
+        border: 2px solid #333;
+        background-color: rgb(47, 167, 0);
+        border-radius: 8px;
+        outline: none;
+        margin-bottom: 15px;
+        padding: 10px;
+        font-size: 0,5em;
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .login__button:disabled {
+        background-color: #eee;
+        color: #aaa;
+    }

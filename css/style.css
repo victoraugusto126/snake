@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../imgs/8-Bit-Backgrounds-HD-1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 500px; /* Defina a largura da caixa principal */
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse os limites */
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.ranking-container {
+    display: flex;
+    flex-direction: column; /* Para garantir que cada box ocupe uma linha */
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%; /* Garantir que as boxes não ultrapassem o tamanho da tela */
+}
+
+.ranking-item {
+    display: flex;
+    justify-content: space-between; /* Alinha o nome e o tempo na mesma linha */
+    align-items: center;
+    padding: 15px;
+    width: 465px; /* Faz a box ocupar toda a largura */
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px; /* Espaçamento entre as boxes */
+    font-size: 15px;
+}
+
+.ranking-item span {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.ranking-item span.score {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.buttons-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+button {
+    width: 48%;
+    padding: 10px;
+    background-color: rgb(47, 167, 0);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgb(37, 137, 0);
+}
+
+button:focus {
+    outline: none;
+}
+
+.exit-btn {
+    background-color: #ff4c4c;
+}
+
+.exit-btn:hover {
+    background-color: #e33c3c;
+}
+
+/* Responsividade */
+@media (max-width: 300px) {
+    .container {
+        width: 90%;
+    }
+
+    .ranking-item {
+        width: 100%; /* Em telas pequenas, as boxes ocupam toda a largura */
+    }
+}
